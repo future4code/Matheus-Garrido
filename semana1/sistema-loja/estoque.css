@@ -1,10 +1,10 @@
-/* Este arquivo configura a redenrizacao da pagina inicial
+/* Este arquivo configura a redenrizacao do controle de estoque
    do site da Seu Garrido Docaria */
 
  /*--------- CABECALHO ---------*/
  
    /*Config da logo do cabecalho */  
-.logo-cab {
+   .logo-cab {
     max-width: 70px;
     max-height: 70px;
     vertical-align: middle;
@@ -44,9 +44,11 @@
 
 .rodape {
     width: 100%;
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
     text-align: center;
+    position: fixed;
+    margin: auto;
 }
 
  /*--------- BACKGROUND ---------*/
@@ -56,27 +58,47 @@ body {
     height: 100%;
 }
 
+ /*--------- CONTEUDO ESTOQUE ---------*/
 
- /*--------- CONTEUDO HOME ---------*/
-
-.welcm {
-    color: rgb(92, 86, 86);
-}
-
-.slgm {
-    color: rgb(92, 86, 86);
-    text-align: right;
-}
-
-.cont-pag {
+ .cont-pag {
     min-height: 100%;
     height: 100%;
-    width: 60%;
+    width: 100%;
     position: relative;
     padding-bottom: 30px;
 }
 
-.txt-apres {
-    text-align: justify;
-}
 
+ .tit-menu {
+     color: darksalmon;
+     text-align: center;
+ }
+
+ .cab-tab {
+    color: rgb(92, 86, 86);
+    text-align: center;
+    padding-right: 30px;
+    padding-left: 30px;
+    background-color: darksalmon;
+ }
+
+ .img-prod {
+     width: 200px;
+     height: 200px;
+     /* padding-right: 30px; */
+     text-align: center;
+ }
+
+ .colunas-i {
+     text-align: center;
+     /* padding-right: 30px; */
+    color: rgb(92, 86, 86);
+    background-color: rgba(233, 150, 122, 0.753);
+ }
+
+ .colunas-p {
+    text-align: center;
+    /* padding-right: 30px; */
+   color: rgb(92, 86, 86);
+   background-color: rgba(233, 150, 122, 0.521);
+}
