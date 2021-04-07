@@ -1,4 +1,4 @@
-/* Este arquivo configura a redenrizacao do controle de estoque
+/* Este arquivo configura a redenrizacao o registro de vendas
    do site da Seu Garrido Docaria */
 
  /*--------- CABECALHO ---------*/
@@ -58,52 +58,65 @@ body {
     height: 100%;
 }
 
- /*--------- CONTEUDO ESTOQUE ---------*/
+ /*--------- CONTEUDO CAD PRODUTO ---------*/
 
- .cont-pag {
+ .info-form {
+    color: rgb(92, 86, 86);
+    /* padding-right: 30px; */
+    text-align: left;
+    padding-bottom: 8px;
+    display: inline-block;
+    width: 150px;
+ }
+
+/*  .wdt-cx{
+     width: 500px;
+ } */
+
+ .ger-vnd {
     min-height: 100%;
     height: 100%;
     width: 100%;
     position: relative;
     padding-bottom: 30px;
-}
-
-
- .tit-menu {
-     color: darksalmon;
-     text-align: center;
+    /* text-align: center; */
+    background-color: darksalmon;
+    padding-top: 30px;
  }
 
  .tit-menu {
     color: darksalmon;
     text-align: center;
- }
+}
 
- .cab-tab {
-    color: rgb(92, 86, 86);
-    text-align: center;
-    padding-right: 30px;
-    padding-left: 30px;
-    background-color: darksalmon;
- }
+.cab-tab {
+   color: rgb(92, 86, 86);
+   text-align: center;
+   padding-right: 30px;
+   padding-left: 30px;
+   background-color: darksalmon;
+}
 
- .img-prod {
-     width: 200px;
-     height: 200px;
-     /* padding-right: 30px; */
-     text-align: center;
- }
-
- .colunas-i {
-     text-align: center;
-     /* padding-right: 30px; */
-    color: rgb(92, 86, 86);
-    background-color: rgba(233, 150, 122, 0.753);
- }
-
- .colunas-p {
+.colunas-i {
     text-align: center;
     /* padding-right: 30px; */
    color: rgb(92, 86, 86);
-   background-color: rgba(233, 150, 122, 0.521);
+   background-color: rgba(233, 150, 122, 0.753);
+}
+
+.colunas-p {
+   text-align: center;
+   /* padding-right: 30px; */
+  color: rgb(92, 86, 86);
+  background-color: rgba(233, 150, 122, 0.521);
+}
+
+.vle, .numb {
+    display: inline-block;
+}
+
+.butn {
+    color: rgb(92, 86, 86);
+    background-color: rgb(63, 202, 179);
+    margin: 0px;
 }
