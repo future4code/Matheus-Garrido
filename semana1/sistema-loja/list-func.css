@@ -1,0 +1,78 @@
+/* Este arquivo configura a redenrizacao do cadastro de funcionarios
+   do site da Seu Garrido Docaria */
+
+ /*--------- CABECALHO ---------*/
+ 
+   /*Config da logo do cabecalho */  
+   .logo-cab {
+    max-width: 70px;
+    max-height: 70px;
+    vertical-align: middle;
+}
+
+/* Config das cores dos botoes do cabecalho*/
+.cabecalho {
+    width: 100%;
+    background-color: lightsalmon;
+    position: relative;
+    text-align: center;
+}
+
+.bts-cab {
+    color: rgb(63, 202, 179);
+}
+
+ /*--------- RODAPE ---------*/
+
+/* Config dos icones das redes sociais*/
+.img-red-soc {
+    width: 30px;
+}
+
+.bts-red-soc {
+    width: 100%;
+    background-color: lightsalmon;
+    margin-bottom: 1px;
+}
+
+.txt-red-soc {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(92, 86, 86);
+    margin-bottom: 2px;
+}
+
+.rodape {
+    width: 100%;
+    /* position: absolute; */
+    bottom: 0;
+    text-align: center;
+    position: fixed;
+    margin: auto;
+}
+
+ /*--------- BACKGROUND ---------*/
+
+body {
+    background-color: rgb(63, 202, 179);
+    height: 100%;
+}
+
+ /*--------- CONTEUDO CAD PRODUTO ---------*/
+
+ .tit-menu {
+    color: darksalmon;
+    text-align: center;
+ }
+
+ .cont-pag {
+    min-height: 100%;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding-bottom: 10px;
+    text-align: left;
+    background-color: darksalmon;
+    padding-top: 10px;
+    color: rgb(92, 86, 86);
+ }

@@ -5,66 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Controle de Estoque</title>
+    <link rel="stylesheet" type="text/css" href="estoque.css">
 </head>
 <body>
-    <div>
-        <p>Seu Garrido Doçaria</p>
-    </div>
+
     
-    <div>
-        <a href="index.html">Página Inicial</a>
-        <a href="ctrl-estoque.html">Controle de Estoque</a>
-        <a href="add-produto.html">Adicionar Produto</a>
-        <a href="funcionarios.html">Funcionários</a>
+    <div class="cabecalho">
+        <img class="logo-cab" src="../img/logo.png" alt="logo">
+        <a class="bts-cab" href="index.html">Página Inicial</a>
+        <a class="bts-cab" href="ctrl-estoque.html">Controle de Estoque</a>
+        <a class="bts-cab" href="add-produto.html">Adicionar Produto</a>
+        <a class="bts-cab" href="funcionarios.html">Funcionários</a>
     </div>
 
-    <h2>Controle de Estoque</h2>
+    <div class="cont-pag">
+        <h2 class="tit-menu">Controle de Estoque</h2>
+        <table>
+            <tr>
+                <th class="cab-tab">Foto</th>
+                <th class="cab-tab">Descrição</th>
+                <th class="cab-tab">Preço (R$)</th>
+                <th class="cab-tab">Quantidade disponível</th>
+            </tr>
 
-    <table>
-        <tr>
-            <th>Foto</th>
-            <th>Descrição</th>
-            <th>Preço (R$)</th>
-            <th>Quantidade disponível</th>
-        </tr>
+            <tr>
+                <td><img class="img-prod" src="../img/DP.jpg" alt="Delícia no Pote"/></td>
+                <td class="colunas-i"> Delícia no Pote </td>
+                <td class="colunas-i"> 12,50 </td>
+                <td class="colunas-i"> 30 </td>
+            </tr>
 
-        <tr>
-            <td><img src="../img/DP.jpg" alt="Delícia no Pote"/></td>
-            <td> Delícia no Pote </td>
-            <td> 12,50 </td>
-            <td> 30 </td>
-        </tr>
+            <tr>
+                <td><img class="img-prod" src="../img/Mini.jpg" alt="Mini Bolo Vó Maria"/></td>
+                <td class="colunas-p"> Mini Bolo Vó Maria </td>
+                <td class="colunas-p"> 12,00 </td>
+                <td class="colunas-p"> 26 </td>
+            </tr>
 
-        <tr>
-            <td><img src="../img/Mini.jpg" alt="Mini Bolo Vó Maria"/></td>
-            <td> Mini Bolo Vó Maria </td>
-            <td> 12,00 </td>
-            <td> 26 </td>
-        </tr>
+            <tr>
+                <td><img class="img-prod" src="../img/BF.jpg" alt="Brownie Fatia"/></td>
+                <td class="colunas-i"> Brownie Fatia </td>
+                <td class="colunas-i"> 15,00 </td>
+                <td class="colunas-i"> 30 </td>
+            </tr>
 
-        <tr>
-            <td><img src="../img/BF.jpg" alt="Brownie Fatia"/></td>
-            <td> Brownie Fatia </td>
-            <td> 15,00 </td>
-            <td> 30 </td>
-        </tr>
-
-        <tr>
-            <td><img src="../img/BVM.jpg" alt="Bolo da Vó Maria"/></td>
-            <td> Bolo da Vó Maria </td>
-            <td> 55,00 </td>
-            <td> 10 </td>
-        </tr>
+            <tr>
+                <td><img class="img-prod" src="../img/BVM.jpg" alt="Bolo da Vó Maria"/></td>
+                <td class="colunas-p"> Bolo da Vó Maria </td>
+                <td class="colunas-p"> 55,00 </td>
+                <td class="colunas-p"> 10 </td>
+            </tr>
         
-        <!-- Crie mais uma linha desta tabela abaixo \/ -->
-        <tr>
-            <td><img src="../img/FatiaTorta.jpg" alt="Torta em Fatia"></td>
-            <td>Torta em Fatia</td>
-            <td>15,00</td>
-            <td>25</td>
-        </tr>
+            <!-- Crie mais uma linha desta tabela abaixo \/ -->
+            <tr>
+                <td><img class="img-prod" src="../img/FatiaTorta.jpg" alt="Torta em Fatia"></td>
+                <td class="colunas-i">Torta em Fatia</td>
+                <td class="colunas-i">15,00</td>
+                <td class="colunas-i">25</td>
+            </tr>
 
-    </table>
+        </table>  
+    </div>
+
+    
+
+    <div class="rodape">
+        <p class="txt-red-soc">Siga-nos nas redes sociais!</p>
+
+        <div class="bts-red-soc">
+            <img class="img-red-soc" src="https://image.flaticon.com/icons/png/512/25/25305.png" />
+            <img class="img-red-soc" src="https://image.flaticon.com/icons/png/512/25/25425.png" />
+            <img class="img-red-soc" src="https://image.flaticon.com/icons/png/512/8/8800.png" />
+        </div>
+    </div>
 
 </body>
 </html>
