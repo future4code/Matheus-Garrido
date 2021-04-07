@@ -1,6 +1,9 @@
 /* Este arquivo configura a redenrizacao do controle de estoque
    do site da Seu Garrido Docaria */
-
+   * {
+    margin: 0;
+    padding: 0;
+  }
  /*--------- CABECALHO ---------*/
  
    /*Config da logo do cabecalho */  
@@ -19,7 +22,8 @@
 }
 
 .bts-cab {
-    color: rgb(63, 202, 179);
+    color: rgb(92, 86, 86);
+    margin-right: 10px;
 }
 
  /*--------- RODAPE ---------*/
@@ -67,7 +71,6 @@ body {
     position: relative;
     padding-bottom: 30px;
 }
-
 
  .tit-menu {
      color: darksalmon;

@@ -1,6 +1,11 @@
 /* Este arquivo configura a redenrizacao o registro de vendas
    do site da Seu Garrido Docaria */
 
+   * {
+    margin: 0;
+    padding: 0;
+  }
+
  /*--------- CABECALHO ---------*/
  
    /*Config da logo do cabecalho */  
@@ -19,7 +24,8 @@
 }
 
 .bts-cab {
-    color: rgb(63, 202, 179);
+    color: rgb(92, 86, 86);
+    margin-right: 10px;
 }
 
  /*--------- RODAPE ---------*/
@@ -59,7 +65,18 @@ body {
 }
 
  /*--------- CONTEUDO CAD PRODUTO ---------*/
-
+ 
+ .cont-pag {
+/*     min-height: 100%;
+    height: 100%;
+    width: 100%; */
+    position: relative;
+    padding-bottom: 10px;
+/*     text-align: left; */
+   /*  background-color: darksalmon; */
+    padding-top: 10px;
+ /*    color: rgb(92, 86, 86); */
+ }
  .info-form {
     color: rgb(92, 86, 86);
     /* padding-right: 30px; */
@@ -69,24 +86,48 @@ body {
     width: 150px;
  }
 
-/*  .wdt-cx{
-     width: 500px;
- } */
+.tbl{
+    text-align: center;
+}
+
+ .res-vnd {
+     position: absolute;
+     right: 0px;
+     top: 150px;
+     text-align: center;
+     width: 100%;
+    /*  right: 0px;
+     top: 0px; */
+ }
 
  .ger-vnd {
-    min-height: 100%;
-    height: 100%;
-    width: 100%;
-    position: relative;
+    position: absolute;
     padding-bottom: 30px;
-    /* text-align: center; */
     background-color: darksalmon;
     padding-top: 30px;
+    bottom: -200px;
  }
+
+ .res-vnd, .ger-vnd {
+     display: inline-block;
+     width: 50%;
+ }
+
+
+
+.conc-vnd {
+    position: absolute;
+    top: 330px;
+    background-color: rgba(233, 150, 122, 0.644);
+    width: 100%;
+    text-align: center;
+}
 
  .tit-menu {
     color: darksalmon;
     text-align: center;
+    width: 600px;
+
 }
 
 .cab-tab {
@@ -113,6 +154,7 @@ body {
 
 .vle, .numb {
     display: inline-block;
+    background-color: darksalmon;
 }
 
 .butn {
@@ -120,3 +162,14 @@ body {
     background-color: rgb(63, 202, 179);
     margin: 0px;
 }
+
+.hist-vnd {
+    text-align: center;
+}
+
+.btn-hist {
+    color: rgb(92, 86, 86);
+    background-color: darksalmon;
+    margin: 5px;
+}
+
