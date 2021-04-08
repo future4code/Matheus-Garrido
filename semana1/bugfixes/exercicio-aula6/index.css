@@ -51,11 +51,15 @@ div img {
     height: 40px;
     border-radius: 5px;
     font-size: 20px;
-    color: white;
+    color: black;
 }
 
 .botao-amarelo:hover {
     background-color: #c44f00;
+}
+
+.botao-amarelo:active {
+    color: white;
 }
 
 .container {
@@ -107,7 +111,7 @@ div:last-child {
 }
 
 table {
-    width: 50%;
+    width: 70%;
     text-align: center;
     margin: auto;
 }
@@ -118,6 +122,14 @@ td button {
     height: 30px;
     border-radius: 5px;
     color: black;
+}
+
+td button:hover {
+    background-color: #c44f00;
+}
+
+td button:active {
+    color: white;
 }
 
 td img {
@@ -141,6 +153,19 @@ td img {
     color: black;
 }
 
+a:link{
+    text-decoration: none;
+    color: inherit;
+}
+
+a {
+    color: inherit;
+}
+
 #back-button:hover {
-    background-color: #635a3d
+    background-color: #c44f00
+}
+
+#back-button:active {
+    color: white;
 }
