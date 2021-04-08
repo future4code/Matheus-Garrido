@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Vendas</title>
+    <link rel="stylesheet" type="text/css" href="vendas.css">
+</head>
+
+
+<body>
+
+    <div class="cont-pag">
+        
+        <div class="cabecalho">
+            <img class="logo-cab" src="../img/logo.png" alt="logo">
+            <a class="bts-cab" href="index.html">Página Inicial</a>
+            <a class="bts-cab" href="ctrl-estoque.html">Controle de Estoque</a>
+            <a class="bts-cab" href="add-produto.html">Adicionar Produto</a>
+            <a class="bts-cab" href="funcionarios.html">Funcionários</a>
+            <a class="bts-cab" href="reg-vendas.html">Vendas</a>
+            <a class="bts-cab" href="hist-vendas.html">Histórico de Vendas</a>
+        </div>
+
+        <div class="ger-vnd">
+            <form action="">
+
+                <div class="wdt-cx">
+                    <label class="info-form" for="nome-client">ID Cliente: </label>
+                    <input type="text" id="nome-client" name="nome-cliente">
+                </div>
+
+                <div class="wdt-cx">
+                    <label class="info-form" for="inf-prod">Produto: </label>
+                    <select name="inf-prod" id="inf-prod">
+                        <option value="DP">Delícia no Pote</option>
+                        <option value="MB">Mini Bolo</option>
+                        <option value="BF">Brownie em Fatia</option>
+                        <option value="BVM">Bolo Vó Maria</option>
+                        <option value="TF">Torta Fatia</option>
+                    </select>
+                    <!-- <input type="text" id="inf-prod" name="produto"> -->
+                </div>
+
+                <div class="wdt-cx">
+                    <label class="info-form" for="qntd">Quantidade: </label>
+                    <input type="number" min="1" id="qntd" name="quantidade">
+                </div>
+
+                <div class="wdt-cx">
+                    <label class="info-form" for="nome-venddr">ID Vendedor: </label>
+                    <input type="text" id="nome-venddr" name="vendedor">
+                </div>
+
+            </form>
+        </div>
+
+        <div class="res-vnd">
+            <!-- <p>Resumo da Venda:</p> -->
+            <h4 class="tit-menu">Resumo da Venda:</h3>
+                <table class="tbl">
+                    <tr>
+                        <th class="cab-tab">Produto</th>
+                        <th class="cab-tab">Valor Unit</th>
+                        <th class="cab-tab">Quantidade</th>
+                        <th class="cab-tab">Subtotal</th>
+                    </tr>
+
+                    <tr>
+                        <td class="colunas-i"> Delícia no Pote </td>
+                        <td class="colunas-i"> 12,50 </td>
+                        <td class="colunas-i"> 2 </td>
+                        <td class="colunas-i"> 25,00 </td>
+                    </tr>
+
+                    <tr>
+                        <td class="colunas-p"> Brownie Fatia </td>
+                        <td class="colunas-p"> 15,00 </td>
+                        <td class="colunas-p"> 3 </td>
+                        <td class="colunas-p"> 45,00 </td>
+                    </tr>
+
+                </table>
+        </div>
+
+        <div class="conc-vnd">
+            <form action="">
+
+                <div class="wdt-cx">
+                    <label class="info-form" for="descnt">Desconto (%): </label>
+                    <input type="number"  min="1" id="descnt" name="desconto">
+                </div>
+
+                <h4 class="vle">Valor Total:</h4>
+                <p class="numb">70,00</p>
+
+                <div class="wdt-cx">
+                    <label class="info-form" for="card">Forma de Pagamento: </label>
+                    <select name="card" id="card">
+                        <option value="av">A Vista</option>
+                        <option value="deb">Débito</option>
+                        <option value="crd">Crédito</option>
+                    </select>
+                    <!-- <input type="text" id="inf-prod" name="produto"> -->
+                </div>
+
+                <div class="form-add">
+                    <!-- Adicione ao type do botão abaixo o valor para que ele submeta o formulário -->
+                    <button class="butn" type="submit">Concluir Venda</button>
+                </div>
+
+            </form>
+        </div>
+
+        <!-- <div class="hist-vnd">
+            <form action="">
+                <div class="btn-hist">
+                    Adicione ao type do botão abaixo o valor para que ele submeta o formulário
+                    <button class="butn" type="submit">HISTÓRICO DE VENDAS</button>
+                </div>
+            </form>
+        </div> -->
+        
+        <div class="rodape">
+            <p class="txt-red-soc">Siga-nos nas redes sociais!</p>
+    
+            <div class="bts-red-soc">
+                <img class="img-red-soc" src="https://image.flaticon.com/icons/png/512/25/25305.png" />
+                <img class="img-red-soc" src="https://image.flaticon.com/icons/png/512/25/25425.png" />
+                <img class="img-red-soc" src="https://image.flaticon.com/icons/png/512/8/8800.png" />
+            </div>
+        </div>
+
+    </div>
+    
+
+
+</body>
+</html>
