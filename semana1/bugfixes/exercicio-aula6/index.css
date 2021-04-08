@@ -29,8 +29,14 @@ img {
     width: 100px;
 }
 
-div>p:first-child {
-    display: inline;
+/* div>p:first-child {
+    
+} */
+
+.aprs-loja {
+    display: block;
+    width: 200px;
+    margin: auto;
 }
 
 div img {
