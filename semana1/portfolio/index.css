@@ -57,10 +57,6 @@ header img {
 /* ------------------------------- Conteudo Home ---------------------------------*/
 /* -------------------------------------------------------------------------------*/
 
-/* main {
-    margin-left: 20px;
-    margin-right: 20px;
-} */
 
 /* ------------------------------- secao apresentacao ----------------------------*/
 
@@ -288,3 +284,57 @@ header img {
     color: rgb(154, 155, 159);
     margin-bottom: 30px;
 }
+
+.fale-comigo button:hover {
+    background-color: rgb(154, 155, 159);
+    color: white;
+    border-color: transparent;
+}
+
+/* ------------------------------ secao rodape -------------------------------*/
+
+footer {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    top: 2900px;
+    background-image: linear-gradient(to left, rgb(154,155,159) 30%, rgb(115,115,116) 30%, rgb(115,115,116), rgb(154,155,159) 30%);
+    /* padding-top: 20px; */
+    /* padding-bottom: 20px; */
+    /* text-align: center; */
+    border-top: 20px solid rgb(254, 226, 82);
+}
+
+/*imagem perfil*/
+#perfil-footer {                  
+    /* border-radius: 50%; */
+    width: 150px;
+ /*    display: inline-block; */
+    padding: 30px;
+}
+
+/*imagens redes*/
+footer img {
+    width: 50px;
+    padding: 10px;
+
+}
+
+footer div p {
+    width: 300px;
+    padding-top: 30px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.redes {
+    margin-left: 35%;
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-top: 100px;
+    text-align: center;
+}
+
+
