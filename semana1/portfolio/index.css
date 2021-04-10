@@ -57,10 +57,12 @@ header img {
 /* ------------------------------- Conteudo Home ---------------------------------*/
 /* -------------------------------------------------------------------------------*/
 
-main {
+/* main {
     margin-left: 20px;
     margin-right: 20px;
-}
+} */
+
+/* ------------------------------- secao apresentacao ----------------------------*/
 
 #foto-perfil {
     border-radius: 50%;
@@ -68,6 +70,15 @@ main {
 }
 
 #img-elemnts {
+    width: 100%;
+    position: absolute;
+    display: block;
+    top: 400px;
+    z-index: 9999;
+}
+
+.apresentacao {
+    text-align: center;
     width: 100%;
 }
 
@@ -87,12 +98,76 @@ main {
     margin-top: 30px;
     margin-bottom: 30px;
     width: 500px;
+    text-align: center;
 }
 
 .apresentacao div {
-    text-align: center;
     display: inline-block;
+    vertical-align: middle;
+    position: relative;
 }
+
+.apresentacao div:first-of-type {
+    display: inline-block;
+    margin-right: 80px;
+}
+
+/* --------------------------------- secao curriculo -----------------------------*/
+.curriculo {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    /* background-color: rgb(154, 155, 159); */
+    background-image: linear-gradient(to left, rgb(154,155,159) 30%, rgb(115,115,116) 30%, rgb(115,115,116), rgb(154,155,159) 30%);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    top: 840px;
+}
+
+.curriculo article {
+    width: 20%;
+    /* background-color: white; */
+    background-color: rgb(254, 226, 82);
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(115,115,116);
+    /* border-color: white; */
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.curriculo article ul {
+    list-style-type: none;
+}
+
+.curriculo article h3 {
+    color: rgb(154, 155, 159);
+    padding: 5px;
+}
+
+.curriculo article h4 {
+    color: white;
+    padding: 5px;
+}
+
+.curriculo article p {
+    color: white;
+    padding-bottom: 10px;
+}
+
+.curriculo article ul {
+    padding: 10px;
+}
+
+.curriculo article ul li {
+    padding-top: 10px;
+}
+
+
 
 
 
