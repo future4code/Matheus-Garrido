@@ -9,16 +9,90 @@
 /* ----------------------------------- Cabeçalho ---------------------------------*/
 /* -------------------------------------------------------------------------------*/
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 header {
-    margin: 5px 10px;
     width: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
 }
 
 header img {
-    width: 60px;
-    vertical-align: middle;
+    width: 100px; 
+    margin-left: 70px;   
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
+.bots-header {
+    float: right; /* posicionar bts no canto esquerdo */
+    margin-top: 37.275px;
+    margin-right: 70px;
+    color: rgb(154, 155, 159);
+}
+
+.bots-header button {
+    margin-left: 50px;
+    border-width: 2px;
+    font-weight: 400;
+    border-color: rgb(254, 226, 82);
+    background-color: transparent;
+    padding: 0.8rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    border-radius: 20px;
+    color: rgb(154, 155, 159);
+}
+
+.bots-header button:hover {
+    background-color: rgb(154, 155, 159);
+    color: white;
+    border-color: transparent;
+}
+
+/* -------------------------------------------------------------------------------*/
+/* ------------------------------- Conteudo Home ---------------------------------*/
+/* -------------------------------------------------------------------------------*/
+
+main {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#foto-perfil {
+    border-radius: 50%;
+    width: 300px;
+}
+
+#img-elemnts {
+    width: 100%;
+}
+
+.apresentacao h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 48px;
+    color: rgb(254, 226, 82);
+    margin-top: 30px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.apresentacao p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 24px;
+    color: rgb(154, 155, 159);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 500px;
+}
+
+.apresentacao div {
+    text-align: center;
+    display: inline-block;
+}
 
 
 
