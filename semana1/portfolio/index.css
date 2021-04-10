@@ -234,5 +234,57 @@ header img {
     margin-right: 10px;
 }
 
+/* ------------------------------ secao meus trabalhos --------------------------*/
 
+.meus-jobs {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    top: 2000px;
+}
 
+.loja-seugarrido h3 {
+    font-size: 40px;
+    color: rgb(154, 155, 159);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.loja-seugarrido p {
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.loja-seugarrido div a img {
+    width: 300px;
+    border-radius: 50%;
+}
+
+/* ------------------------------ secao final contato --------------------------*/
+
+.fale-comigo {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    top: 2600px;
+}
+
+.fale-comigo h4 {
+    font-size: 25px;
+    color: rgb(154, 155, 159);
+    margin-bottom: 30px;
+}
+
+.fale-comigo button {
+    font-weight: 400;
+    border-color: rgb(254, 226, 82);
+    background-color: transparent;
+    padding: 0.8rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    border-radius: 20px;
+    color: rgb(154, 155, 159);
+    margin-bottom: 30px;
+}
