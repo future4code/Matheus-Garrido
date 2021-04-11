@@ -401,3 +401,79 @@ footer div p {
 .info-proj {
     margin-top: 300px;
 }
+
+
+/* -------------------------------------------------------------------------------*/
+/* -------------------------------- pagina contatos    ---------------------------*/
+/* -------------------------------------------------------------------------------*/
+
+
+
+.form-contato {
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+}
+
+#formulario {
+    width: 30%;
+    margin: 0 auto;
+}
+
+#formulario input {
+    display: flex;
+    width: 100%;
+
+}
+
+#formulario textarea {
+    width: 100%;
+}
+
+.botn-contato button {
+    border-width: 2px;
+    font-weight: 400;
+    border-color: rgb(254, 226, 82);
+    background-color: transparent;
+    padding: 0.8rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    border-radius: 20px;
+    color: rgb(154, 155, 159);
+    text-align: center;
+}
+
+.botn-contato button:hover {
+    background-color: rgb(154, 155, 159);
+    color: white;
+    border-color: transparent;
+}
+
+.outros-contatos {
+    margin-top: 60px;
+    width: 100%;
+    text-align: center;
+    background-image: linear-gradient(to left, rgb(154,155,159) 30%, rgb(115,115,116) 30%, rgb(115,115,116), rgb(154,155,159) 30%);
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.outros-contatos h3 {
+    font-size: 20px;
+    color: rgb(254, 226, 82);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 50%;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.outros-contatos img {
+    padding-right: 20px;
+    width: 50px;
+}
+
+.outros-contatos p {
+    font-size: 20px;
+}
