@@ -5,9 +5,15 @@
     padding: 0;
 }
 
+main {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 /* -------------------------------------------------------------------------------*/
-/* ----------------------------------- Cabeçalho ---------------------------------*/
+/* ----------------------------------- pagina home--------------------------------*/
 /* -------------------------------------------------------------------------------*/
+
+
+/* ----------------------------------- cabecalho  --------------------------------*/
 
 a {
     text-decoration: none;
@@ -53,9 +59,8 @@ header img {
     border-color: transparent;
 }
 
-/* -------------------------------------------------------------------------------*/
 /* ------------------------------- Conteudo Home ---------------------------------*/
-/* -------------------------------------------------------------------------------*/
+
 
 
 /* ------------------------------- secao apresentacao ----------------------------*/
@@ -338,3 +343,61 @@ footer div p {
 }
 
 
+/* -------------------------------------------------------------------------------*/
+/* -------------------------------- pagina projects    ---------------------------*/
+/* -------------------------------------------------------------------------------*/
+
+.aprs-proj {
+    background-image: linear-gradient(to left, rgb(254,226,82) 30%, rgb(250,229,112) 30%, rgb(250,229,112), rgb(254,226,82) 30%);
+    margin-bottom: 50px;
+}
+
+.aprs-proj h3{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: rgb(154, 155, 159);
+}
+
+.aprs-proj p {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 50px;
+    color: white;
+}
+
+#site-seu-garrido {
+    width: 700px;
+}
+
+.info-proj p {
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.info-proj h4 {
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.img-ferr {
+    height: 150px;
+    text-align: center;
+    margin: 10px;
+}
+
+.info-proj div:last-of-type {
+    text-align: center;
+
+}
+
+.sist-seu-garrido {
+    display: flex;
+}
+
+.info-proj {
+    margin-top: 300px;
+}
