@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+/* ================================ CABECALHO ====================================== */
+header {
+    background-image: linear-gradient(to left, rgb(154,155,159) 30%, rgb(115,115,116) 30%, rgb(115,115,116), rgb(154,155,159) 30%);
+    padding: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+}
+
+.marca h4 {
+    font-size: 40px;
+}
+
+.busca {
+    display: flex;
+    align-items: center;
+}
+
+.marca img {
+    height: 40px;
+    padding-right: 10px;
+}
+
+.busca img {
+    height: 20px;
+    padding-left: 10px;
+}
+
+.busca input {
+    height: 30px;
+    border-radius: 10px;
+}
+
+/* ================================ Conteudo home =================================== */
+
+main {
+    /* background-color: rgb(185, 194, 202); */
+    margin: 20px;
+    flex-grow: 1;
+
+}
+
+.videos img {
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.videos {   
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 30px;
+    column-gap: 30px;
+    /* flex-grow: 1; */
+}
+
+.card-video {
+    background-color: rgb(185, 194, 202);
+    border: solid black;
+    border-width: 1px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .card-videos {
+    display: flex;
+    justify-items: center;
+} */
+
+
+/* ================================   RODAPE   =================================== */
+
+footer {
+    background-image: linear-gradient(to left, rgb(154,155,159) 30%, rgb(115,115,116) 30%, rgb(115,115,116), rgb(154,155,159) 30%);
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 0 20px;
+}
+
+footer h4 {
+    font-size: 40px;
+}
+
+footer div {
+    display: flex;
+}
+
+footer button {
+    height: 40px;
+    width: 130px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.labemake p {
+    font-size: 25px;
+    padding-right: 10px;
+}
+.labemake {
+    display: flex;
+    align-items: center;
+}
+
+/* ============================= Tela de Videos  ================================= */
+
+main h2 {
+    font-size: 40px;
+    padding-bottom: 5px;
+}
+
+.titulo-video {
+    padding-bottom: 20px;
+}
+
+.video video {
+    height: 600px;
+    padding-right: 30px;
+}
+
+.video {
+    display: flex;
+    justify-content: space-around;
+}
