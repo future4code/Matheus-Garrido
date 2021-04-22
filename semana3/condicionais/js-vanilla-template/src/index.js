@@ -185,7 +185,9 @@ let nomeUser = prompt('Qual o seu nome?')
 let tipoGame = prompt('Indique IN para jogo internacional e DO para jogo nacional:')
 let nivelGame = prompt('Qual a etapa da partida? SF - semi-final; DT - terceiro-lugar; FI - final')
 let categoria = prompt('Qual a categoria do seu ingresso, 1, 2, 3 ou 4?')
-let qntdTicket = prompt('Quantos ingressos?')
+let qntdTicket = Number(prompt('Quantos ingressos?'))
+
+const dolar = 4.1
 
 console.log('--- Dados da Compra ---')
 console.log('Nome do Cliente: ', nomeUser)
@@ -198,17 +200,87 @@ if (tipoGame.toLowerCase() === 'do')  {
 
 switch (nivelGame.toLowerCase()) {
     case 'sf':
+        vlrCat1 = 1320
+        vlrCat2 = 880
+        vlrCat3 = 550
+        vlrCat4 = 220
         console.log('Etapa do jogo:  Semi-final')
         break
     case 'dt':
+        vlrCat1 = 660
+        vlrCat2 = 440
+        vlrCat3 = 330
+        vlrCat4 = 170
         console.log('Etapa do jogo:  Decisão de terceiro lugar')
         break
     case 'fi':
+        vlrCat1 = 1980
+        vlrCat2 = 1320
+        vlrCat3 = 880
+        vlrCat4 = 330
         console.log('Etapa do jogo:  Final')
         break
     default:
         console.log('Informe uma entrada válida: (SF/DT/FI)')
         break
+}
+
+console.log('Categoria: ', categoria)
+console.log('Quantidade de Ingressos: ', qntdTicket)
+console.log('--- Valores ---')
+
+if (tipoGame.toLowerCase()==='do') {
+    switch (categoria) {
+        case '1':
+            console.log('Valor do ingresso: R$ ', vlrCat1)
+            valor1 = vlrCat1*qntdTicket
+            valorTckIn = vlrCat1/dolar
+            break
+        case '2':
+            console.log('Valor do ingresso: R$ ', vlrCat2)
+            valor1 = vlrCat2*qntdTicket
+            valorTckIn = vlrCat2/dolar
+            break
+        case '3':
+            console.log('Valor do ingresso: R$ ', vlrCat3)
+            valor1 = vlrCat3*qntdTicket
+            valorTckIn = vlrCat3/dolar
+            break
+        case '4':
+            console.log('Valor do ingresso: R$ ', vlrCat4)
+            valor1 = vlrCat4*qntdTicket
+            valorTckIn = vlrCat4/dolar
+            break
+        default:
+            console.log('Informe uma entrada válida: (SF/DT/FI)')
+            break
+    }
+
+    console.log('Valor total: R$ ', valor1)
+
+} else {
+
+    switch (categoria) {
+        case '1':
+            valorTckIn = vlrCat1/dolar
+            break
+        case '2':
+            valorTckIn = vlrCat2/dolar
+            break
+        case '3':
+            valorTckIn = vlrCat3/dolar
+            break
+        case '4':
+            valorTckIn = vlrCat4/dolar
+            break
+        default:
+            console.log('Informe uma entrada válida: (SF/DT/FI)')
+            break
+    }
+
+    console.log('Valor do ingresso:  U$ ', valorTckIn)
+    valorTotIn = valorTckIn*qntdTicket
+    console.log('Valor total:  U$ ', valorTotIn)
 }
 
 
