@@ -348,7 +348,7 @@ console.log(arrayNumPares) */
 
 //e
 
-let maiorNumero = 0
+/* let maiorNumero = 0
 
 for (let i = 0; i < arrayOriginal.length; i++) {
     if (arrayOriginal[i] > maiorNumero) {
@@ -366,5 +366,54 @@ for (let n = 0; n < arrayOriginal.length; n++) {
     }
 }
 
-console.log('O menor número da Array é: ', menorNumero)
+console.log('O menor número da Array é: ', menorNumero) */
 
+// ====================== Desafios  ======================
+
+//Desafio 1
+
+/* const numeroJog1 = Number(prompt('Em que número você está pensando?'))
+console.log('Vamos Jogar!')
+let i = 0
+
+let numeroJog2 = Number(prompt('Vamos adivinhar! Chute um número:'))
+console.log('O número chutado foi: ', numeroJog2)
+
+while (numeroJog2 !== numeroJog1) {
+    if (numeroJog2 > numeroJog1) {
+        console.log('Você Errou, é menor')
+    } else {
+        console.log('Você Errou, é maior')
+    }
+    numeroJog2 = Number(prompt('Vamos adivinhar! Chute um número:'))
+    console.log('O número chutado foi: ', numeroJog2)
+    i++
+}
+
+console.log('Você Acertou, Parabéns!')
+console.log('O número de tentativas foi: ', i) */
+
+
+//Desafio 1
+
+//const numeroJog1 = Number(prompt('Em que número você está pensando?'))
+const numeroJog1 = ((Math.random()).toFixed(2))*100
+console.log('Vamos Jogar!')
+let i = 0
+
+let numeroJog2 = Number(prompt('Vamos adivinhar! Chute um número:'))
+console.log('O número chutado foi: ', numeroJog2)
+
+while (numeroJog2 !== numeroJog1) {
+    if (numeroJog2 > numeroJog1) {
+        console.log('Você Errou, é menor')
+    } else {
+        console.log('Você Errou, é maior')
+    }
+    numeroJog2 = Number(prompt('Vamos adivinhar! Chute um número:'))
+    console.log('O número chutado foi: ', numeroJog2)
+    i++
+}
+
+console.log('Você Acertou, Parabéns!')
+console.log('O número de tentativas foi: ', i)
