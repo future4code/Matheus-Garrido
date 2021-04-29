@@ -10,16 +10,20 @@
 </head>
 <body>
     <section id="formulario">
-        <label for="titulo-post">Título:</label>
+        <label for="titulo-post">Título:*</label>
         <input type="text" id="titulo-post">
 
-        <label for="autor-post">Autor:</label>
+        <label for="autor-post">Autor:*</label>
         <input type="text" id="autor-post">
 
-        <label for="conteudo-post">Conteúdo:</label>
+        <label for="img-post">Url da Imagem:</label>
+        <input type="url" id="img-post">
+
+        <label for="conteudo-post">Conteúdo:*</label>
         <textarea id="conteudo-post" cols="30" rows="10"></textarea>
         
         <button onclick="criarPost()">Criar Post</button>
+        <!-- <a href="posts.html"><button onclick="dadosPost()">Criar Post</button></a> -->
     </section>
 
     <section id="container-de-posts">
