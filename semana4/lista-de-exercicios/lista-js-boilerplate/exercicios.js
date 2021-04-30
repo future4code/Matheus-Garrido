@@ -7,13 +7,21 @@ function inverteArray(array) {
      let elemento = array[(maiorIndice-i)]
      arrayInverida[i] = elemento
   }
-  return array = arrayInverida
+  return arrayInverida
 }
 
 //Exercício 2
 
 function retornaNumerosParesElevadosADois (array) {
-   // implemente sua lógica aqui
+   let quadradoNumerosPares = []
+   let contadorNumPar = 0
+   for (const i of array) {
+      if (array[i] % 2 === 0) {
+         quadradoNumerosPares[contadorNumPar] = Math.pow(array[i], 2)
+         contadorNumPar++
+      }  
+   }
+   return quadradoNumerosPares
 }
 
 //Exercício 3
