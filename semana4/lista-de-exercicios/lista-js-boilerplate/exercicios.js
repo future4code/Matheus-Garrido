@@ -71,7 +71,15 @@ function retornaExpressoesBooleanas() {
 //Exercício 7
 
 function retornaNNumerosPares(n) {
-   // implemente sua lógica aqui
+   ultimoNumPar = (n*2)-2
+   let numPares = [ultimoNumPar]
+
+   for (let i = 1; i < n; i++) {
+      ultimoNumPar += - 2;
+      numPares.push(ultimoNumPar)
+   }
+
+   return numPares.reverse()
 }
 
 // Exercício 8
