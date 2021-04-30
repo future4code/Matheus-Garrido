@@ -122,7 +122,13 @@ function comparaDoisNumeros(num1, num2) {
 // Exercício 10
 
 function segundoMaiorEMenor(array) {
-   // implemente sua lógica aqui
+   const maiorValor = Math.max(...array)
+   const menorValor = Math.min(...array)
+   array.splice(array.indexOf(maiorValor), 1);
+   array.splice(array.indexOf(menorValor), 1);
+   const segMaiorValor = Math.max(...array)
+   const segMenorValor = Math.min(...array)
+   return [segMaiorValor, segMenorValor]
 }
 
 //Exercício 11
