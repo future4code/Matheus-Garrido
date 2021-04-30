@@ -98,7 +98,25 @@ function checaTriangulo(a, b, c) {
 // Exercício 9
 
 function comparaDoisNumeros(num1, num2) {
-   // implemente sua lógica aqui
+   
+   const maiorNum = Math.max(num1, num2)
+   const menorNum = Math.min(num1, num2)
+   const subtracao = maiorNum - menorNum
+
+   let divisibilidade
+   if (maiorNum % menorNum === 0) {
+      divisibilidade = true
+   } else {
+      divisibilidade = false
+   }
+
+   const propNumeros = {
+      maiorNumero: maiorNum,
+      maiorDivisivelporMenor: divisibilidade,
+      diferenca: subtracao
+   }
+
+   return propNumeros
 }
 
 // Exercício 10
