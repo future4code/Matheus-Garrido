@@ -148,14 +148,21 @@ function ordenaArray(array) {
       arrOrdemCrescente [array.length - n] =  maiorNumero
       array.splice(array.indexOf(maiorNumero), 1);
       array.push(Math.min(...array))
-      return arrOrdemCrescente
    }
+   return arrOrdemCrescente
 }
 
 // Exercício 12
 
 function filmeFavorito() {
    // implemente sua lógica aqui
+   const filmeFavAstrodev = {
+      nome: 'O Diabo Veste Prada',
+      ano: 2006,
+      diretor: 'David Frankel',
+      atores: ['Meryl Streep', 'Anne Hathaway', 'Emily Blunt', 'Stanley Tucci']
+   }
+   return filmeFavAstrodev
 }
 
 // Exercício 13
