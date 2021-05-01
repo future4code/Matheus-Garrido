@@ -134,7 +134,22 @@ function segundoMaiorEMenor(array) {
 //Exercício 11
 
 function ordenaArray(array) {
-   // implemente sua lógica aqui
+   let n = 0
+   let arrOrdemCrescente = []
+   while (n < array.length) {
+
+      let maiorNumero = Math.min(...array)
+      for (const i of array) {
+         if (i > maiorNumero) {
+            maiorNumero = i
+         } 
+      }
+      n++
+      arrOrdemCrescente [array.length - n] =  maiorNumero
+      array.splice(array.indexOf(maiorNumero), 1);
+      array.push(Math.min(...array))
+      return arrOrdemCrescente
+   }
 }
 
 // Exercício 12
