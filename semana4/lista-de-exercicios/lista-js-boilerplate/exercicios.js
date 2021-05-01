@@ -210,13 +210,20 @@ const arrayDePessoas = [
 // Exercício 16, letra A
 
 function maioresDe18(arrayDePessoas) {
-   // implemente sua lógica aqui
+   const pessoasAdultas = arrayDePessoas.filter((adultos) => {
+      return adultos.idade >= 20
+   })
+   return pessoasAdultas
 }
 
 // Exercício 16, letra B
 
 function menoresDe18(arrayDePessoas) {
    // implemente sua lógica aqui
+   const pessoasMenores = arrayDePessoas.filter((menores) => {
+      return menores.idade < 20
+   })
+   return pessoasMenores
 }
 
 // Exercício 17, letra A
