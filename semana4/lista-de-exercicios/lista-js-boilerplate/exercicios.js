@@ -229,19 +229,37 @@ function menoresDe18(arrayDePessoas) {
 // Exercício 17, letra A
 
 function multiplicaArrayPor2(array) {
-   // implemente sua lógica aqui
+   for (let i = 0; i < array.length; i++) {
+      array[i] *= 2
+   }
+   return array
 }
 
 // Exercício 17, letra B
 
 function multiplicaArrayPor2S(array) {
   // implemente sua lógica aqui
+  let arrayString =[]
+  for (let i = 0; i < array.length; i++) {
+   array[i] *= 2
+   arrayString[i]=`${array[i]}`
+}
+return arrayString
 }
 
 // Exercício 17, letra C
 
 function verificaParidade(array) {
    // implemente sua lógica aqui
+   let arrayMensgParidade = []
+   for (let i = 0; i < array.length; i++) {
+      if (array[i] % 2 === 0) {
+         arrayMensgParidade[i] = `${array[i]} é par`
+      } else {
+         arrayMensgParidade[i] = `${array[i]} é ímpar`
+      }
+   }
+   return arrayMensgParidade
 }
 
 // Exercício 18
