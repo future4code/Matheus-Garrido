@@ -238,7 +238,6 @@ function multiplicaArrayPor2(array) {
 // Exercício 17, letra B
 
 function multiplicaArrayPor2S(array) {
-  // implemente sua lógica aqui
   let arrayString =[]
   for (let i = 0; i < array.length; i++) {
    array[i] *= 2
@@ -250,7 +249,6 @@ return arrayString
 // Exercício 17, letra C
 
 function verificaParidade(array) {
-   // implemente sua lógica aqui
    let arrayMensgParidade = []
    for (let i = 0; i < array.length; i++) {
       if (array[i] % 2 === 0) {
@@ -276,7 +274,10 @@ const pessoas = [
 //Exercício 18, letra A
 
 function retornaPessoasAutorizadas() {
-   // implemente sua lógica aqui
+   const pessoasAutorizadas = pessoas.filter((autorizados) => {
+      return autorizados.altura >= 1.5 && autorizados.idade > 14 && autorizados.idade < 60
+   })
+   return pessoasAutorizadas
 }
 
 
@@ -284,6 +285,11 @@ function retornaPessoasAutorizadas() {
 
 function retornaPessoasNaoAutorizadas() {
    // implemente sua lógica aqui
+   const pessoasNaoAutorizadas = pessoas.filter((naoAutorizado) => {
+      return naoAutorizado.altura < 1.5 && naoAutorizado.idade <= 14 && naoAutorizado.idade > 60
+   })
+   console.log(pessoasNaoAutorizadas)
+   return pessoasNaoAutorizadas
 }
 
 //Exercício 19
