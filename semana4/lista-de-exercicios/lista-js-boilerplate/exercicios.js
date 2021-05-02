@@ -286,9 +286,9 @@ function retornaPessoasAutorizadas() {
 function retornaPessoasNaoAutorizadas() {
    // implemente sua lógica aqui
    const pessoasNaoAutorizadas = pessoas.filter((naoAutorizado) => {
-      return naoAutorizado.altura < 1.5 && naoAutorizado.idade <= 14 && naoAutorizado.idade > 60
+      //console.log(naoAutorizado)
+      return naoAutorizado.altura < 1.5 || naoAutorizado.idade <= 14 || naoAutorizado.idade > 60
    })
-   console.log(pessoasNaoAutorizadas)
    return pessoasNaoAutorizadas
 }
 
