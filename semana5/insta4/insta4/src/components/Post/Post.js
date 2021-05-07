@@ -41,11 +41,26 @@ const PostPhoto = styled.img`
 `
 
 class Post extends React.Component {
+
   state = {
     curtido: false,
     numeroCurtidas: 0,
     comentando: false,
-    numeroComentarios: 0
+    numeroComentarios: 0,
+
+    corpoPostagem: [
+      {nomeUsuario: 'paulinha',
+      fotoUsuario: 'https://picsum.photos/50/50?random=1',
+      fotoPost: 'https://picsum.photos/200/150?random=2'},
+
+      {nomeUsuario: 'matheus',
+      fotoUsuario: 'https://picsum.photos/50/50?random=3',
+      fotoPost: 'https://picsum.photos/200/150?random=4'},
+
+      {nomeUsuario: 'jon',
+      fotoUsuario: 'https://picsum.photos/50/50?random=5',
+      fotoPost: 'https://picsum.photos/200/150?random=6'}
+    ]
   }
 
   onClickCurtida = () => {
@@ -87,29 +102,38 @@ class Post extends React.Component {
       componenteComentario = <SecaoComentario aoEnviar={this.aoEnviarComentario}/>
     }
 
-    return <PostContainer>
-      <PostHeader>
-        <UserPhoto src={this.props.fotoUsuario} alt={'Imagem do usuario'}/>
-        <p>{this.props.nomeUsuario}</p>
-      </PostHeader>
+    const formatoPostagem = this.state.corpoPostagem.map((postagem) => {
+      return (
+        <PostContainer>
+          <PostHeader>
+            <UserPhoto src={postagem.fotoUsuario} alt={'Imagem do usuario'}/>
+            <p>{postagem.nomeUsuario}</p>
+          </PostHeader>
 
-      <PostPhoto src={this.props.fotoPost} alt={'Imagem do post'}/>
+          <PostPhoto src={postagem.fotoPost} alt={'Imagem do post'}/>
 
-      <PostFooter>
-        <IconeComContador
-          icone={iconeCurtida}
-          onClickIcone={this.onClickCurtida}
-          valorContador={this.state.numeroCurtidas}
-        />
+          <PostFooter>
+            <IconeComContador
+            icone={iconeCurtida}
+            onClickIcone={this.onClickCurtida}
+            valorContador={this.state.numeroCurtidas}
+            />
 
-        <IconeComContador
-          icone={iconeComentario}
-          onClickIcone={this.onClickComentario}
-          valorContador={this.state.numeroComentarios}
-        />
-      </PostFooter>
-      {componenteComentario}
-    </PostContainer>
+            <IconeComContador
+              icone={iconeComentario}
+              onClickIcone={this.onClickComentario}
+              valorContador={this.state.numeroComentarios}
+            />
+          </PostFooter>
+          {componenteComentario}
+        </PostContainer>
+      )
+    })
+
+    return <>
+      {formatoPostagem}
+     
+    </>
   }
 }
 
