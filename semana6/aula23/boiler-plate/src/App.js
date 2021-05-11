@@ -37,11 +37,15 @@ class App extends React.Component {
     }
 
   componentDidUpdate() {
-
+    localStorage.setItem("tarefas", JSON.stringify(this.state.tarefas))
   };
 
   componentDidMount() {
-
+    const stringTarefas = localStorage.getItem("tarefas");
+    const objetoTarefa = JSON.parse(stringTarefas)
+    if (stringTarefas) {
+      this.setState({ tarefas: objetoTarefa });
+    }
   };
 
   onChangeInput = (event) => {
@@ -57,8 +61,6 @@ class App extends React.Component {
     const novaListaTarefas = [novaTarefa, ...this.state.tarefas]
     this.setState({tarefas: novaListaTarefas})
   }
-
-  
 
   selectTarefa = (id) => {
     const tarefaSelecionada = this.state.tarefas.map((tarefa) => {
@@ -78,6 +80,14 @@ class App extends React.Component {
   onChangeFilter = (event) => {
     this.setState({filtro: event.target.value})
 
+  }
+
+  deletarTarefa = (id) => {
+    console.log("Apagar mensagem:", id)
+    const listaTarefasAtual = this.state.tarefas.filter((tarefa) => {
+      return id !== tarefa.id
+    })
+    this.setState({ tarefas: listaTarefasAtual })
   }
 
   render() {
@@ -115,6 +125,7 @@ class App extends React.Component {
               <Tarefa
                 completa={tarefa.completa}
                 onClick={() => this.selectTarefa(tarefa.id)}
+                onDoubleClick={() => this.deletarTarefa(tarefa.id)}
               >
                 {tarefa.texto}
               </Tarefa>
