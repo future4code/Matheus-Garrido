@@ -19,14 +19,14 @@ export default class DadosGerais extends React.Component {
                 </div>
                 <div>
                     <p>4. Qual a sua escolaridade?</p>
-                    <select>
-                        <option>Ensino Médio Incompleto</option>
-                        <option>Ensino Médio Completo</option>
-                        <option>Ensino Superior Incompleto</option>
-                        <option>Ensino Superior Completo</option>
+                    <select onChange={this.onChangePage}>
+                        <option value="med-incp">Ensino Médio Incompleto</option>
+                        <option value="med-comp">Ensino Médio Completo</option>
+                        <option value="sup-incp">Ensino Superior Incompleto</option>
+                        <option value="sup-comp">Ensino Superior Completo</option>
                     </select>
                 </div>
-                <button onClick={this.props.mudarDePag}>Avançar</button>    
+                <button onClick={this.props.mudarDePag}>Avançar</button>     
             </div>
         );
     }
