@@ -25,7 +25,7 @@ export default class Cadastro extends React.Component {
                 this.props.limpaImputs()
             })
             .catch((err) => {
-                alert(err)
+                alert("Insira um e-mail válido")
             })
     }
 
