@@ -1,7 +1,30 @@
 import React from 'react'
+import axios from 'axios'
 import {UserContainer} from '../../styled'
 
+const URL_BASE = "https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users"
+
 export default class Usuarios extends React.Component {
+
+  excluirUsuario = (idUser) => {
+    const header = {
+      headers: {
+        Authorization: "matheus-garrido-paiva"
+      }
+    }
+
+    if (window.confirm('Tem certeza que deseja deletar este usuário?')) {
+      axios
+      .delete(`${URL_BASE}/${idUser}`, header)
+      .then((res) => {
+        alert('Usuário deletado')
+        this.props.getInfosUsuarios();
+      })
+      .catch((err) => {
+        console.log(err)
+      })
+    }
+  }
 
   render() {
 
@@ -10,7 +33,8 @@ export default class Usuarios extends React.Component {
             <div className="usuarios"  key={user.id}>
               <li>{user.name}</li>
               <div>
-                <button onClick={() => this.props.excluirUsuario(user.id)}>Deletar</button>
+                <button onClick={() => this.props.changeTelaMoreInfos(user.id)}>Mais Informações</button>
+                <button onClick={() => this.excluirUsuario(user.id)}>Deletar</button>
               </div>
             </div>
         )    
@@ -22,9 +46,8 @@ export default class Usuarios extends React.Component {
           <h3>Usuários Cadastrados:</h3>
           {nomeUsuarios}
           <div className="botao-voltar">
-            <button onClick={() => this.props.changeTela()}>Voltar</button> 
-          </div>
-            
+            <button onClick={() => this.props.changeTelaCadastro()}>Voltar</button> 
+          </div> 
       </UserContainer>
     )
   }

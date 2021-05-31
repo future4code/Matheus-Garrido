@@ -1,6 +1,7 @@
 import React from 'react'
 import Cadastro from './Components/Cadastro/Cadastro'
 import Usuarios from './Components/Usuarios/Usuarios'
+import DetalhesUser from './Components/Detalhes/DetalhesUser'
 import axios from 'axios'
 import { MainConteiner } from './styled'
 
@@ -12,14 +13,12 @@ export default class App extends React.Component {
     infosUsuarios: [],
     inputName: "",
     inputEmail: "",
-    telaUserCadastrados: 0,
-    voltarTelaCadastro: 1
+    telaRenderizada: "cadastro",
+    idUserMoreInfos: undefined
   };
 
   getInfosUsuarios = () => {
-
-    this.setState({ telaUserCadastrados: 1 })
-    this.setState({ voltarTelaCadastro: 1 })
+    this.setState({ telaRenderizada: "usuarios"})
 
     const header = {
       headers: {
@@ -51,38 +50,23 @@ export default class App extends React.Component {
     this.setState({ inputEmail: "" })
   }
 
-  excluirUsuario = (idUser) => {
-    const header = {
-      headers: {
-        Authorization: "matheus-garrido-paiva"
-      }
-    }
-
-    if (window.confirm('Tem certeza que deseja deletar este usuário?')) {
-      axios
-      .delete(`${URL_BASE}/${idUser}`, header)
-      .then((res) => {
-        alert('Usuário deletado')
-        this.getInfosUsuarios();
-      })
-      .catch((err) => {
-        console.log(err)
-      })
-    }
+  changeTelaCadastro = () => {
+    this.setState({ telaRenderizada: "cadastro"})
   }
 
-  changeTela = () => {
-    this.setState({ voltarTelaCadastro: 0 })
-    this.setState({ telaUserCadastrados: 0 })
+  changeTelaMoreInfos = (id) => {
+    this.setState({ telaRenderizada: "moreInfos"})
+    this.setState({ idUserMoreInfos: id})
   }
+
   
 
   render() {
-    console.log('oi')
 
-    if (this.state.telaUserCadastrados === 0 || this.state.voltarTelaCadastro === 0) {
-      return (
-        <MainConteiner>
+    switch (this.state.telaRenderizada) {
+      case "cadastro":
+        return (
+          <MainConteiner>
           <Cadastro
             getInfosUsuarios={this.getInfosUsuarios}
             inputName={this.state.inputName}
@@ -92,18 +76,28 @@ export default class App extends React.Component {
             limpaImputs={this.limpaImputs}
           />
         </MainConteiner>
-      )        
-    } else if (this.state.telaUserCadastrados === 1) {
-      return (
-        <MainConteiner>
-          <Usuarios
-            infosUsuarios={this.state.infosUsuarios}
-            getInfosUsuarios={this.getInfosUsuarios}
-            excluirUsuario={this.excluirUsuario}
-            changeTela={this.changeTela}
-          />
-        </MainConteiner>
-      )
+        )
+      case "usuarios":
+          return (
+            <MainConteiner>
+              <Usuarios
+              infosUsuarios={this.state.infosUsuarios}
+              getInfosUsuarios={this.getInfosUsuarios}
+              changeTelaCadastro={this.changeTelaCadastro}
+              changeTelaMoreInfos={this.changeTelaMoreInfos}
+              />
+          </MainConteiner>
+          )
+        case "moreInfos":
+            return (
+              <DetalhesUser
+              idUserMoreInfos={this.state.idUserMoreInfos}
+              getInfosUsuarios={this.getInfosUsuarios}
+              />
+            )
+    
+      default:
+        break;
     }
   }
 }
