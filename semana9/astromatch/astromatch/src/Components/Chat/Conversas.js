@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios'
+import {ChatSection} from './styled'
 
 export default function Conversas(props) {
 
@@ -20,15 +21,15 @@ export default function Conversas(props) {
     }, [setMatches])
 
     return (
-        <div>
+        <ChatSection>
             {matches.map((usuarios) => {
                 return (
-                    <div key={usuarios.id}>
+                    <div className="chats" key={usuarios.id}>
                         <img src={usuarios.photo}></img>
-                        <p>{usuarios.name}</p>
+                        <h4>{usuarios.name}</h4>
                     </div>
                 )
             })}
-        </div>
+        </ChatSection>
     )
 }

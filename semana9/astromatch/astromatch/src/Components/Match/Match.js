@@ -1,5 +1,9 @@
 import React from 'react'
 import axios from 'axios'
+import FavoriteBorderRoundedIcon from '@material-ui/icons/FavoriteBorderRounded';
+import ClearRoundedIcon from '@material-ui/icons/ClearRounded';
+import Fab from '@material-ui/core/Fab';
+import {MatchSection} from './styled'
 
 export default function Match(props) {
 
@@ -24,9 +28,9 @@ export default function Match(props) {
     }
 
     return (
-        <div>
-            <button onClick={() => choosePerson(false)}>❌</button>
-            <button onClick={() => choosePerson(true)}>🧡</button>
-        </div>
+        <MatchSection>
+            <Fab onClick={() => choosePerson(false)}><ClearRoundedIcon fontSize="large" color="secondary"/></Fab>
+            <Fab onClick={() => choosePerson(true)}><FavoriteBorderRoundedIcon fontSize="large" color="primary"/></Fab>
+        </MatchSection>
     )
 }

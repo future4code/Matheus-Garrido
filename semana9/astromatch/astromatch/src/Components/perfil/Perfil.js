@@ -1,10 +1,11 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios'
+import {PerfilSection} from './styled'
+import animacao from '../../img/animacao.gif'
 
 export default function Perfil(props) {
 
     const [usuario, setUsuario] = useState({})
-    console.log(props.newPerfil)
 
     useEffect(() => {
         const getProfileToChoose = () => {
@@ -21,18 +22,22 @@ export default function Perfil(props) {
     }, [props.newPerfil])
 
     return (
-        <div>
+        <PerfilSection url={usuario.photo}>
             {usuario.photo ?
-                <div>
-                    <img src={usuario.photo}></img>
-                    <h3>{`${usuario.name}, ${usuario.age}`}</h3>
-                    <p>{usuario.bio}</p> 
+                <div className="perfil-completo">
+                    <div className="foto-perfil">
+                       <img id="foto-usuario" src={usuario.photo}></img> 
+                    </div>
+                    <div className="detalhes">
+                       <h3>{`${usuario.name}, ${usuario.age}`}</h3>
+                        <p>{usuario.bio}</p>  
+                    </div>
                     {props.idProfile(usuario.id)}
                 </div>
             : 
-                <p>Carregando perfis próximos a você</p>
+                <img src={animacao} alt="gif animado logo" id="animacao" ></img>
             }
             
-        </div>
+        </PerfilSection>
     )
 }
