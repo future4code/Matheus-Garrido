@@ -1,26 +1,32 @@
 import {useEffect, useState} from 'react'
 import axios from 'axios'
+import {BASE_URL} from '../constants/url'
 
-const urlBase = "https://us-central1-labenu-apis.cloudfunctions.net/labeX/matheus-garrido-paiva"
+const urlBase = BASE_URL;
 
-const useRequestData = (initialState, url) => {
+const useRequestData = (initialState, url, headerParam, didMount) => {
 
     const [data, setData] = useState(initialState)
 
     const getTrips = () => {
+
+        const header = {
+            headers: headerParam
+        }
+
         axios
-        .get(`${urlBase}${url}`)
+        .get(`${urlBase}${url}`, header)
         .then((res) => {
             setData(res.data)
         })
-        .catch((err) => {
-            console.log(err)
+        .catch(() => {
+            alert("Algo deu errado, tente novamente!")
         })
     };
 
     useEffect(() => {
         getTrips();
-    }, []);
+    }, didMount ? [data] : []);
 
     return data;
 }
