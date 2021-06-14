@@ -27,7 +27,11 @@ export default function Countries(props) {
     })
 
     return (
-        <select defaultValue name={props.name} onChange={props.onChange}>
+        <select
+            defaultValue 
+            name={props.name} 
+            onChange={props.onChange}
+        >
             {list}
         </select>
     )

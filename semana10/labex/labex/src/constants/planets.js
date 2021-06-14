@@ -9,10 +9,10 @@ export default function Planets(props) {
             <option value={"Urano"}>Urano</option>
             <option value={"Netuno"}>Netuno</option>
             <option value={"Plutão"}>Plutão</option>
-            <option value={"Éris"}>Éris</option>
+            {/* <option value={"Éris"}>Éris</option>
             <option value={"Ceres"}>Ceres</option>
             <option value={"Haumea"}>Haumea</option>
-            <option value={"Makemake"}>Makemake</option>
+            <option value={"Makemake"}>Makemake</option> */}
         </select>
     )
 }
