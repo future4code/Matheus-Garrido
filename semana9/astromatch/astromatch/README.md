@@ -1,3 +1,27 @@
+
+labeX
+
+A labeX te leva para o espaço! Já pensou que, ao invés de colocar uma bandeirinha de um país nos destaques de seu insta, agora você pode colocar um planeta? Estamos selecionando humanos para viajar e desvendar o espaço. Um luau em Marte, ou um Fondue no frio de Plutão, que tal?
+
+O site conta com 7 páginas:
+
+Home: onde é possível o usuário escolher entre continuar no site como candidato a uma viagem ou entrar na área restrita a administração;
+Página de Viagens: é nela que estão listadas todas as expedições agendadas na Labex, essa página é aberta e não precisa de autenticação. É possível obter todos os detalhes das expedições e ser redirecionado a partir de botões para a página de submissão de candidatura;
+Página de Submissão de candidatura: conta com um formulário, que deve ser preenchido com os dados do usuário que deseja viajar pela LabeX. A apresentação de cada uma das expedições aparece numa caixa de texto ao lado do formulário, a medida que o usuário manipula o dropdown.
+Página de Login: uma vez que o usuário faça parte da administração do Labex, ele poderá fazer seu login para ter acesso a área de gestão das viagens, via e-mail e senha. Esta página contém um formulário que recebe estes dados e um botão que retorna o usuário a página Home;
+Página Home Administrativa: uma vez tendo autenticação confirmada, nesta página o usuário tem acesso a todas as viagens programadas na labeX, e também é capaz de fazer a requisição de deletar viagem, que a exclui permanentemente do site.
+Página de Detalhes das Viagens Administrativa: uma vez clicado na viagem na página home administrativa, o usuário é direcionado para a página de detalhes, onde é possível visualizar a lista de usuários aprovados para aquela expedição, e avaliar os candidatos a ela, podendo aprová-los ou reprová-los;
+Página de Cadastro de Expedição: o usuário logado, pode cadastrar novas viagens ao espaço, utilizando o formulário que se encontra nesta página.
+O que funciona
+Todas as páginas funcionado.
+Requisições na API integradas e funcionais.
+Token de autenticação armazenado no local storage.
+Logout na área administrativa, que redireciona o usuário a página de login.
+Link Surge
+https://yielding-gun.surge.sh
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
