@@ -1,0 +1,19 @@
+{
+  "name": "template-node-npm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+	  "exercicio-1":"node ./src/exerc1.js",
+    "exercicio-2":"node ./src/exerc2.js",
+    "exercicio-3":"node ./src/exerc3.js"
+  },
+  "author": "Labenu",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  }
+}
